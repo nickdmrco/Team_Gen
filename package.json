@@ -1,0 +1,27 @@
+{
+  "name": "teamGen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickdmrco/teamGen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickdmrco/teamGen/issues"
+  },
+  "homepage": "https://github.com/nickdmrco/teamGen#readme",
+  "dependencies": {
+    "json": "^10.0.0"
+  }
+}
