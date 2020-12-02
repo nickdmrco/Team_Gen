@@ -1,7 +1,7 @@
-const Employee = require("./lib/Employee");
-const Boss = require("./lib/Boss");
-const Coder = require("./lib/Coder");
-const Intern = require("./lib/Intern");
+const Employee = require("./lib/employee");
+const Boss = require("./lib/boss");
+const Coder = require("./lib/coder");
+const Intern = require("./lib/intern");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
@@ -9,7 +9,7 @@ const fs = require("fs");
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
-const render = require("./lib/htmlRenderer");
+const render = require("./lib/htmlRender");
 
 let team = []
 
