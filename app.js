@@ -9,20 +9,15 @@ const fs = require("fs");
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
-const render = require("./lib/htmlRender");
+const render = require("./lib/htmlrender");
 
 let team = []
 
 const finish = () => {
- let htmlPage = render(team)
- if (!fs.existsSync(OUTPUT_DIR)) {
-  fs.mkdirSync(OUTPUT_DIR)
- }
- fs.writeFile(outputPath, htmlPage, err => {
-  if (err) {
-   console.log(err)
+  if (!fs.existsSync(OUTPUT_DIR)) {
+    fs.mkdirSync(OUTPUT_DIR)
   }
- })
+  fs.writeFileSync(outputPath, render(team), 'utf-8')
 }
 
 const addMember = () => {
